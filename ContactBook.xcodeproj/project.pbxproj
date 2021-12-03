@@ -10,10 +10,13 @@
 		08A49DD51ED87EC671FC4409 /* Pods_ContactBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAD7DBAABE0780D92992CF8 /* Pods_ContactBook.framework */; };
 		4E7DF705275A1B1800D7EC7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF704275A1B1800D7EC7B /* AppDelegate.swift */; };
 		4E7DF707275A1B1800D7EC7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF706275A1B1800D7EC7B /* SceneDelegate.swift */; };
-		4E7DF709275A1B1800D7EC7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF708275A1B1800D7EC7B /* ViewController.swift */; };
 		4E7DF70C275A1B1800D7EC7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7DF70A275A1B1800D7EC7B /* Main.storyboard */; };
 		4E7DF70E275A1B1900D7EC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7DF70D275A1B1900D7EC7B /* Assets.xcassets */; };
 		4E7DF711275A1B1900D7EC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7DF70F275A1B1900D7EC7B /* LaunchScreen.storyboard */; };
+		4E7DF71C275A21A200D7EC7B /* ContactBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF71B275A21A200D7EC7B /* ContactBookViewController.swift */; };
+		4E7DF71E275A221D00D7EC7B /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF71D275A221D00D7EC7B /* UserInfoViewController.swift */; };
+		4E7DF721275A22A300D7EC7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF720275A22A300D7EC7B /* User.swift */; };
+		4E7DF724275A382100D7EC7B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7DF723275A382100D7EC7B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,14 @@
 		4E7DF701275A1B1800D7EC7B /* ContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7DF704275A1B1800D7EC7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E7DF706275A1B1800D7EC7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E7DF708275A1B1800D7EC7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E7DF70B275A1B1800D7EC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E7DF70D275A1B1900D7EC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E7DF710275A1B1900D7EC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E7DF712275A1B1900D7EC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7DF71B275A21A200D7EC7B /* ContactBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBookViewController.swift; sourceTree = "<group>"; };
+		4E7DF71D275A221D00D7EC7B /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		4E7DF720275A22A300D7EC7B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E7DF723275A382100D7EC7B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C90368564AE4DCA6033E3F9F /* Pods-ContactBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactBook.release.xcconfig"; path = "Target Support Files/Pods-ContactBook/Pods-ContactBook.release.xcconfig"; sourceTree = "<group>"; };
 		F3BDE0680CD25DED1939B95D /* Pods-ContactBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactBook.debug.xcconfig"; path = "Target Support Files/Pods-ContactBook/Pods-ContactBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +69,8 @@
 		4E7DF703275A1B1800D7EC7B /* ContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				4E7DF722275A37D200D7EC7B /* Services */,
+				4E7DF71F275A228E00D7EC7B /* Models */,
 				4E7DF71A275A1B8600D7EC7B /* App */,
 				4E7DF719275A1B4E00D7EC7B /* StoryBoards */,
 				4E7DF718275A1B3600D7EC7B /* ViewControllers */,
@@ -73,7 +81,8 @@
 		4E7DF718275A1B3600D7EC7B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E7DF708275A1B1800D7EC7B /* ViewController.swift */,
+				4E7DF71B275A21A200D7EC7B /* ContactBookViewController.swift */,
+				4E7DF71D275A221D00D7EC7B /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -96,6 +105,22 @@
 				4E7DF712275A1B1900D7EC7B /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		4E7DF71F275A228E00D7EC7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E7DF720275A22A300D7EC7B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E7DF722275A37D200D7EC7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E7DF723275A382100D7EC7B /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		74590F5D12A0EF14ABF52C67 /* Frameworks */ = {
@@ -230,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7DF709275A1B1800D7EC7B /* ViewController.swift in Sources */,
+				4E7DF724275A382100D7EC7B /* NetworkManager.swift in Sources */,
 				4E7DF705275A1B1800D7EC7B /* AppDelegate.swift in Sources */,
+				4E7DF71E275A221D00D7EC7B /* UserInfoViewController.swift in Sources */,
 				4E7DF707275A1B1800D7EC7B /* SceneDelegate.swift in Sources */,
+				4E7DF721275A22A300D7EC7B /* User.swift in Sources */,
+				4E7DF71C275A21A200D7EC7B /* ContactBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
